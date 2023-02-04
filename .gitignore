@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#PyCharm Ide
+.idea
+
+#Service folder
+out_data

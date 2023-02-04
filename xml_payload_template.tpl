@@ -1,0 +1,40 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sap="http://webservices.pmsoft.ru/tcmnc/sappi">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sap:submitRevenueAcceptancePositionDataPack>
+         <revenueAcceptancePositionDataPack>
+            <messageHeader>
+               <correlationId>1</correlationId>
+               <receiptId>2</receiptId>
+               <senderSystem>3</senderSystem>
+               <receiverSystem>4</receiverSystem>
+            </messageHeader>
+            <dataPackInfo>
+               <totalContainers>5</totalContainers>
+               <currentContainer>6</currentContainer>
+               <totalFiles>7</totalFiles>
+               <currentFile>8</currentFile>
+            </dataPackInfo>
+            <revenueAcceptancePositionList>
+{{begin_block}}
+               <revenueAcceptancePosition>
+                  <guid>1</guid>
+                  <contractPathId>1</contractPathId>
+                  <contractKeyPathId>1</contractKeyPathId>
+                  <businessPathId>1</businessPathId>
+                  <incomeStructurePathId>1</incomeStructurePathId>
+                  <currencyId>1</currencyId>
+                  <revenueDate>1</revenueDate>
+                  <cost>1</cost>
+                  <projectCost>1</projectCost>
+                  <rubCost>1</rubCost>
+                  <accountingStandardUsage>1</accountingStandardUsage>
+                  <internal>1</internal>
+                  <balanceSheetUnit>1</balanceSheetUnit>
+               </revenueAcceptancePosition>
+{{end_block}}
+            </revenueAcceptancePositionList>
+         </revenueAcceptancePositionDataPack>
+      </sap:submitRevenueAcceptancePositionDataPack>
+   </soapenv:Body>
+</soapenv:Envelope>
